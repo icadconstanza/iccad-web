@@ -2216,7 +2216,7 @@ input, select, textarea {
 		/* Opcional: tamaño responsivo para móviles */
 		@media screen and (max-width: 600px) {
 		    #logo img {
-		        width: 150px;      /* se hace más pequeño en móviles */
+		        width: 450px;      /* se hace más pequeño en móviles */
 		    }
 		}
 
