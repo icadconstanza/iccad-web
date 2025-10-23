@@ -2301,45 +2301,49 @@ input, select, textarea {
 
 /* Button */
 
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	button,
-	.button {
-		position: relative;
-		display: inline-block;
-		background: #df7366;
-		color: #fff;
-		text-align: center;
-		border-radius: 0.5em;
-		text-decoration: none;
-		padding: 0.65em 3em 0.65em 3em;
-		border: 0;
-		cursor: pointer;
-		outline: 0;
-		font-weight: 300;
-		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-	}
+			/* Botón especial de registro */
+			input[type="button"],
+			input[type="submit"],
+			input[type="reset"],
+			button,
+			.button {
+				position: relative;
+				display: inline-block;
+				background: #A46A00; /* Color base */
+				color: #fff;
+				text-align: center;
+				border-radius: 0.3em; /* Bordes menos redondeados */
+				text-decoration: none;
+				padding: 0.75em 2.5em; /* Espaciado equilibrado */
+				border: none;
+				cursor: pointer;
+				outline: 0;
+				font-weight: 400;
+				font-size: 1em;
+				letter-spacing: 0.5px;
+				transition: background-color 0.35s ease-in-out, 
+				            color 0.35s ease-in-out, 
+				            border-bottom-color 0.35s ease-in-out;
+			}
 
-		input[type="button"]:hover,
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		button:hover,
-		.button:hover {
-			color: #fff;
-			background: #ef8376;
-		}
+			/* Hover principal */
+			input[type="button"]:hover,
+			input[type="submit"]:hover,
+			input[type="reset"]:hover,
+			button:hover,
+			.button:hover {
+				color: #fff;
+				background: #569A93;
+			}
 
-		input[type="button"].alt,
-		input[type="submit"].alt,
-		input[type="reset"].alt,
-		button.alt,
-		.button.alt {
-			background: #2B252C;
-		}
+			/* Variante alternativa */
+			input[type="button"].alt,
+			input[type="submit"].alt,
+			input[type="reset"].alt,
+			button.alt,
+			.button.alt {
+				background: #2B252C;
+			}
 
 			input[type="button"].alt:hover,
 			input[type="submit"].alt:hover,
@@ -2349,6 +2353,28 @@ input, select, textarea {
 				background: #3B353C;
 			}
 
+			/* ===========================
+			   BOTÓN ESPECIAL DE REGISTRO
+			   =========================== */
+			.register-btn {
+				display: inline-block;
+				border-radius: 0.5em;        /* esquinas suaves */
+				font-size: 1.1em;
+				font-weight: 500;
+				padding: 0.8em 2.5em;
+				background: #A46A00;         /* mismo color base */
+				color: #fff;                 /* texto blanco */
+				text-decoration: none;
+				text-transform: none;
+				transition: all 0.35s ease-in-out;
+			}
+
+			.register-btn:hover {
+				background: #569A93;         /* cambia color al pasar el cursor */
+				color: #fff;                 /* mantiene el texto blanco */
+				transform: translateY(-2px); /* efecto sutil de elevación */
+			}
+			
 /* Post */
 
 	.post.stub {
@@ -2542,6 +2568,10 @@ input, select, textarea {
 	body.homepage.is-preload #header:after {
 		opacity: 1;
 	}
+
+	#header {
+    transition: background-image 1s ease-in-out;
+}
 
 /* Nav */
 

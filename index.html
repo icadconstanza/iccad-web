@@ -31,7 +31,7 @@
 						        <p>Tu Iglesia, tu casa.</p>
 						    </header>
 						    <footer>
-						        <a href="#banner" class="button circled scrolly">Start</a>
+						        <a href="#banner" class="register-btn scrolly">Regístrate para ver nuestro contenido</a>
 						    </footer>
 						</div>
 
@@ -386,6 +386,36 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+
+<script>
+    // Selecciona el header
+    const header = document.getElementById('header');
+
+    // Lista de imágenes del carrusel
+    const images = [
+        'images/header1.jpg',
+        'images/header2.jpg',
+        'images/header3.jpg',
+        'images/header4.jpg',
+        'images/header5.jpg',
+        'images/header6.jpg',
+        'images/header7.jpg'
+    ];
+
+    let current = 0;
+
+    function changeBackground() {
+        header.style.backgroundImage = `url('${images[current]}')`;
+        current = (current + 1) % images.length;
+    }
+
+    // Primera imagen al cargar
+    changeBackground();
+
+    // Cambia cada 5 segundos
+    setInterval(changeBackground, 5000);
+</script>
 
 	</body>
 </html>
