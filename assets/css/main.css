@@ -2125,6 +2125,56 @@ input, select, textarea {
 				transform: translateY(-2px); /* efecto sutil de elevación */
 			}
 
+
+/* Muy anchas */
+@media screen and (max-width: 1680px) {
+    .register-btn {
+        font-size: 1.05em;
+        padding: 0.75em 2.4em;
+    }
+}
+
+/* Pantallas medianas */
+@media screen and (max-width: 1280px) {
+    .register-btn {
+        font-size: 1em;
+        padding: 0.7em 2.2em;
+    }
+}
+
+/* Pantallas pequeñas */
+@media screen and (max-width: 960px) {
+    .register-btn {
+        font-size: 0.95em;
+        padding: 0.65em 2em;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media screen and (max-width: 840px) {
+    .register-btn {
+        font-size: 0.9em;
+        padding: 0.6em 1.8em;
+    }
+}
+
+/* Tablets / móviles grandes */
+@media screen and (max-width: 736px) {
+    .register-btn {
+        font-size: 0.85em;
+        padding: 0.55em 1.6em;
+    }
+}
+
+/* Móviles verticales */
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    .register-btn {
+        font-size: 0.8em;
+        padding: 0.5em 1.4em;
+        border-radius: 0.6em;
+    }
+}
+
 /* Post */
 
 	.post.stub {
