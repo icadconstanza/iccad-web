@@ -2125,6 +2125,16 @@ input, select, textarea {
 				transform: translateY(-2px); /* efecto sutil de elevación */
 			}
 
+			@media screen and (max-width: 600px) {
+			    .register-btn {
+			        font-size: 1em;        /* texto un poco más pequeño */
+			        padding: 0.7em 1.8em;  /* menos espacio interno */
+			        width: auto;           /* evita que se estire demasiado */
+			        max-width: 90%;        /* no supera el ancho de pantalla */
+			        white-space: normal;   /* permite que el texto baje si es necesario */
+			        text-align: center;    /* centra el texto */
+			    }
+
 /* Post */
 
 	.post.stub {
