@@ -2211,9 +2211,23 @@ input, select, textarea {
 		    margin: 0 auto;        /* centra la imagen */
 		}
 
+		#header .inner img {
+	    display: block;
+	    width: auto;    /* o un ancho específico */
+	    max-width: 100%;
+	    height: auto;
+		}
+
 		/* Opcional: tamaño responsivo para móviles */
 		@media screen and (max-width: 600px) {
 		    #logo img {
+		        width: 150px;      /* se hace más pequeño en móviles */
+		    }
+		}
+
+		/* Opcional: tamaño responsivo para móviles */
+		@media screen and (max-width: 600px) {
+		    #header .inner img {
 		        width: 150px;      /* se hace más pequeño en móviles */
 		    }
 		}
